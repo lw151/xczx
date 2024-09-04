@@ -1,0 +1,2 @@
+2024-08-30 02:00:01,040 DEBUG [com.alibaba.nacos.client.naming.updater][NamingProxy.java:195] - server list provided by user: [localhost:8848]
+2024-08-30 02:00:01,040 DEBUG [com.alibaba.nacos.client.naming.updater][NamingProxy.java:195] - server list provided by user: [localhost:8848]

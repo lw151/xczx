@@ -1,0 +1,4 @@
+2024-09-04 06:00:00,770 DEBUG [com.alibaba.nacos.client.naming.updater][NacosRestTemplate.java:476] - HTTP method: GET, url: http://localhost:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=dev&clientIP=192.168.136.1&serviceName=xuecheng-plus-project%40%40auth-service&udpPort=60138&clusters=, body: {}
+2024-09-04 06:00:00,770 DEBUG [com.alibaba.nacos.client.naming.updater][NacosRestTemplate.java:476] - HTTP method: GET, url: http://localhost:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=dev&clientIP=192.168.136.1&serviceName=xuecheng-plus-project%40%40auth-service&udpPort=60138&clusters=, body: {}
+2024-09-04 06:00:01,333 DEBUG [com.alibaba.nacos.client.naming.updater][NamingProxy.java:195] - server list provided by user: [localhost:8848]
+2024-09-04 06:00:01,333 DEBUG [com.alibaba.nacos.client.naming.updater][NamingProxy.java:195] - server list provided by user: [localhost:8848]

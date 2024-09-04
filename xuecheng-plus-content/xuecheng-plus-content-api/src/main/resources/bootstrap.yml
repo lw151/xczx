@@ -1,0 +1,41 @@
+#  server:
+#    servlet:
+#      context-path: /content
+#    port: 63040
+#微服务配置
+spring:
+  application:
+    name: content-api #服务名
+  cloud:
+    nacos:
+      discovery: #服务注册相关配置
+        namespace: dev
+        group: xuecheng-plus-project
+      server-addr: localhost:8848
+      config:
+        namespace: dev
+        group: xuecheng-plus-project
+        file-extension: yaml
+        refresh-enabled: true
+        extension-configs:
+          - data-id: content-service-${spring.profiles.active}.yaml
+            group: xuecheng-plus-project
+            refresh: true
+        shared-configs:
+          - data-id: swagger-${spring.profiles.active}.yaml
+            group: xuecheng-plus-common
+            refresh: true
+#          - data-id: logging-${spring.profiles.active}.yaml
+#            group: xuecheng-plus-common
+#            refresh: true
+          - data-id: freemarker-config-dev.yaml
+            group: xuecheng-plus-common
+            refresh: true
+          - data-id: feign-${spring.profiles.active}.yaml
+            group: xuecheng-plus-common
+            refresh: true
+
+
+  profiles:
+    active: dev #环境名
+

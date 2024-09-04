@@ -1,0 +1,184 @@
+2024-08-30 23:49:20,285 ERROR [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848-dev][SpringApplication.java:837] - Application run failed
+java.lang.IllegalStateException: Shutdown in progress
+	at java.lang.ApplicationShutdownHooks.add(ApplicationShutdownHooks.java:66)
+	at java.lang.Runtime.addShutdownHook(Runtime.java:203)
+	at org.springframework.context.support.AbstractApplicationContext.registerShutdownHook(AbstractApplicationContext.java:953)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:399)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:140)
+	at org.springframework.cloud.context.refresh.ContextRefresher.addConfigFilesToEnvironment(ContextRefresher.java:113)
+	at org.springframework.cloud.context.refresh.ContextRefresher.refreshEnvironment(ContextRefresher.java:93)
+	at org.springframework.cloud.context.refresh.ContextRefresher.refresh(ContextRefresher.java:85)
+	at org.springframework.cloud.endpoint.event.RefreshEventListener.handle(RefreshEventListener.java:72)
+	at org.springframework.cloud.endpoint.event.RefreshEventListener.onApplicationEvent(RefreshEventListener.java:61)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
+	at com.alibaba.cloud.nacos.refresh.NacosContextRefresher$1.innerReceive(NacosContextRefresher.java:133)
+	at com.alibaba.nacos.api.config.listener.AbstractSharedListener.receiveConfigInfo(AbstractSharedListener.java:40)
+	at com.alibaba.nacos.client.config.impl.CacheData$1.run(CacheData.java:210)
+	at com.alibaba.nacos.client.config.impl.CacheData.safeNotifyListener(CacheData.java:241)
+	at com.alibaba.nacos.client.config.impl.CacheData.checkListenerMd5(CacheData.java:180)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:569)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:826)
+2024-08-30 23:49:20,300 ERROR [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848-dev][CacheData.java:228] - [fixed-localhost_8848-dev] [notify-error] dataId=feign-dev.yaml, group=xuecheng-plus-common, md5=97708cdac37301b769f5174cfb35d148, listener=com.alibaba.cloud.nacos.refresh.NacosContextRefresher$1@f9276228 tx=null
+2024-08-30 23:49:25,819 ERROR [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848-dev][SpringApplication.java:837] - Application run failed
+java.lang.IllegalStateException: Shutdown in progress
+	at java.lang.ApplicationShutdownHooks.add(ApplicationShutdownHooks.java:66)
+	at java.lang.Runtime.addShutdownHook(Runtime.java:203)
+	at org.springframework.context.support.AbstractApplicationContext.registerShutdownHook(AbstractApplicationContext.java:953)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:399)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:140)
+	at org.springframework.cloud.context.refresh.ContextRefresher.addConfigFilesToEnvironment(ContextRefresher.java:113)
+	at org.springframework.cloud.context.refresh.ContextRefresher.refreshEnvironment(ContextRefresher.java:93)
+	at org.springframework.cloud.context.refresh.ContextRefresher.refresh(ContextRefresher.java:85)
+	at org.springframework.cloud.endpoint.event.RefreshEventListener.handle(RefreshEventListener.java:72)
+	at org.springframework.cloud.endpoint.event.RefreshEventListener.onApplicationEvent(RefreshEventListener.java:61)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
+	at com.alibaba.cloud.nacos.refresh.NacosContextRefresher$1.innerReceive(NacosContextRefresher.java:133)
+	at com.alibaba.nacos.api.config.listener.AbstractSharedListener.receiveConfigInfo(AbstractSharedListener.java:40)
+	at com.alibaba.nacos.client.config.impl.CacheData$1.run(CacheData.java:210)
+	at com.alibaba.nacos.client.config.impl.CacheData.safeNotifyListener(CacheData.java:241)
+	at com.alibaba.nacos.client.config.impl.CacheData.checkListenerMd5(CacheData.java:180)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:569)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:826)
+2024-08-30 23:49:25,821 ERROR [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848-dev][CacheData.java:228] - [fixed-localhost_8848-dev] [notify-error] dataId=feign-dev.yaml, group=xuecheng-plus-common, md5=97708cdac37301b769f5174cfb35d148, listener=com.alibaba.cloud.nacos.refresh.NacosContextRefresher$1@f9276228 tx=null
+2024-08-30 23:49:56,002 ERROR [main][LoggingFailureAnalysisReporter.java:40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'feign.client.config.default.logger-level' to feign.Logger$Level:
+
+    Property: feign.client.config.default.logger-level
+    Value: ERROR
+    Origin: "feign.client.config.default.loggerLevel" from property source "bootstrapProperties-feign-dev.yaml,xuecheng-plus-common"
+    Reason: failed to convert java.lang.String to feign.Logger$Level
+
+Action:
+
+Update your application's configuration. The following values are valid:
+
+    BASIC
+    FULL
+    HEADERS
+    NONE
+
+2024-08-30 23:59:42,450 ERROR [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848-dev][SpringApplication.java:837] - Application run failed
+java.lang.IllegalStateException: Shutdown in progress
+	at java.lang.ApplicationShutdownHooks.add(ApplicationShutdownHooks.java:66)
+	at java.lang.Runtime.addShutdownHook(Runtime.java:203)
+	at org.springframework.context.support.AbstractApplicationContext.registerShutdownHook(AbstractApplicationContext.java:953)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:399)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:140)
+	at org.springframework.cloud.context.refresh.ContextRefresher.addConfigFilesToEnvironment(ContextRefresher.java:113)
+	at org.springframework.cloud.context.refresh.ContextRefresher.refreshEnvironment(ContextRefresher.java:93)
+	at org.springframework.cloud.context.refresh.ContextRefresher.refresh(ContextRefresher.java:85)
+	at org.springframework.cloud.endpoint.event.RefreshEventListener.handle(RefreshEventListener.java:72)
+	at org.springframework.cloud.endpoint.event.RefreshEventListener.onApplicationEvent(RefreshEventListener.java:61)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
+	at com.alibaba.cloud.nacos.refresh.NacosContextRefresher$1.innerReceive(NacosContextRefresher.java:133)
+	at com.alibaba.nacos.api.config.listener.AbstractSharedListener.receiveConfigInfo(AbstractSharedListener.java:40)
+	at com.alibaba.nacos.client.config.impl.CacheData$1.run(CacheData.java:210)
+	at com.alibaba.nacos.client.config.impl.CacheData.safeNotifyListener(CacheData.java:241)
+	at com.alibaba.nacos.client.config.impl.CacheData.checkListenerMd5(CacheData.java:180)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:569)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:826)
+2024-08-30 23:59:42,460 ERROR [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848-dev][CacheData.java:228] - [fixed-localhost_8848-dev] [notify-error] dataId=feign-dev.yaml, group=xuecheng-plus-common, md5=be231faf463160bef709a206f1fd2c41, listener=com.alibaba.cloud.nacos.refresh.NacosContextRefresher$1@733c2319 tx=null
+2024-08-30 23:59:46,563 ERROR [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848-dev][SpringApplication.java:837] - Application run failed
+java.lang.IllegalStateException: Shutdown in progress
+	at java.lang.ApplicationShutdownHooks.add(ApplicationShutdownHooks.java:66)
+	at java.lang.Runtime.addShutdownHook(Runtime.java:203)
+	at org.springframework.context.support.AbstractApplicationContext.registerShutdownHook(AbstractApplicationContext.java:953)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:399)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:140)
+	at org.springframework.cloud.context.refresh.ContextRefresher.addConfigFilesToEnvironment(ContextRefresher.java:113)
+	at org.springframework.cloud.context.refresh.ContextRefresher.refreshEnvironment(ContextRefresher.java:93)
+	at org.springframework.cloud.context.refresh.ContextRefresher.refresh(ContextRefresher.java:85)
+	at org.springframework.cloud.endpoint.event.RefreshEventListener.handle(RefreshEventListener.java:72)
+	at org.springframework.cloud.endpoint.event.RefreshEventListener.onApplicationEvent(RefreshEventListener.java:61)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
+	at com.alibaba.cloud.nacos.refresh.NacosContextRefresher$1.innerReceive(NacosContextRefresher.java:133)
+	at com.alibaba.nacos.api.config.listener.AbstractSharedListener.receiveConfigInfo(AbstractSharedListener.java:40)
+	at com.alibaba.nacos.client.config.impl.CacheData$1.run(CacheData.java:210)
+	at com.alibaba.nacos.client.config.impl.CacheData.safeNotifyListener(CacheData.java:241)
+	at com.alibaba.nacos.client.config.impl.CacheData.checkListenerMd5(CacheData.java:180)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:569)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:826)
+2024-08-30 23:59:46,565 ERROR [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848-dev][CacheData.java:228] - [fixed-localhost_8848-dev] [notify-error] dataId=feign-dev.yaml, group=xuecheng-plus-common, md5=be231faf463160bef709a206f1fd2c41, listener=com.alibaba.cloud.nacos.refresh.NacosContextRefresher$1@733c2319 tx=null
+2024-08-30 23:59:50,533 ERROR [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848-dev][SpringApplication.java:837] - Application run failed
+java.lang.IllegalStateException: Shutdown in progress
+	at java.lang.ApplicationShutdownHooks.add(ApplicationShutdownHooks.java:66)
+	at java.lang.Runtime.addShutdownHook(Runtime.java:203)
+	at org.springframework.context.support.AbstractApplicationContext.registerShutdownHook(AbstractApplicationContext.java:953)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:399)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:140)
+	at org.springframework.cloud.context.refresh.ContextRefresher.addConfigFilesToEnvironment(ContextRefresher.java:113)
+	at org.springframework.cloud.context.refresh.ContextRefresher.refreshEnvironment(ContextRefresher.java:93)
+	at org.springframework.cloud.context.refresh.ContextRefresher.refresh(ContextRefresher.java:85)
+	at org.springframework.cloud.endpoint.event.RefreshEventListener.handle(RefreshEventListener.java:72)
+	at org.springframework.cloud.endpoint.event.RefreshEventListener.onApplicationEvent(RefreshEventListener.java:61)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
+	at com.alibaba.cloud.nacos.refresh.NacosContextRefresher$1.innerReceive(NacosContextRefresher.java:133)
+	at com.alibaba.nacos.api.config.listener.AbstractSharedListener.receiveConfigInfo(AbstractSharedListener.java:40)
+	at com.alibaba.nacos.client.config.impl.CacheData$1.run(CacheData.java:210)
+	at com.alibaba.nacos.client.config.impl.CacheData.safeNotifyListener(CacheData.java:241)
+	at com.alibaba.nacos.client.config.impl.CacheData.checkListenerMd5(CacheData.java:180)
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:569)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:826)
+2024-08-30 23:59:50,535 ERROR [com.alibaba.nacos.client.Worker.longPolling.fixed-localhost_8848-dev][CacheData.java:228] - [fixed-localhost_8848-dev] [notify-error] dataId=feign-dev.yaml, group=xuecheng-plus-common, md5=be231faf463160bef709a206f1fd2c41, listener=com.alibaba.cloud.nacos.refresh.NacosContextRefresher$1@733c2319 tx=null

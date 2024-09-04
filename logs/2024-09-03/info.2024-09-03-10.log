@@ -1,0 +1,30 @@
+2024-09-03 11:00:00,577 DEBUG [com.alibaba.nacos.naming.beat.sender][NamingProxy.java:421] - [BEAT] dev sending beat to server: BeatInfo{port=63010, ip='192.168.215.32', weight=1.0, serviceName='xuecheng-plus-project@@gateway', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false}
+2024-09-03 11:00:00,577 DEBUG [com.alibaba.nacos.naming.beat.sender][NamingProxy.java:421] - [BEAT] dev sending beat to server: BeatInfo{port=63010, ip='192.168.215.32', weight=1.0, serviceName='xuecheng-plus-project@@gateway', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false}
+2024-09-03 11:00:00,583 DEBUG [com.alibaba.nacos.naming.beat.sender][NacosRestTemplate.java:476] - HTTP method: PUT, url: http://localhost:8848/nacos/v1/ns/instance/beat?app=unknown&serviceName=xuecheng-plus-project%40%40gateway&namespaceId=dev&port=63010&clusterName=DEFAULT&ip=192.168.215.32, body: {}
+2024-09-03 11:00:00,583 DEBUG [com.alibaba.nacos.naming.beat.sender][NacosRestTemplate.java:476] - HTTP method: PUT, url: http://localhost:8848/nacos/v1/ns/instance/beat?app=unknown&serviceName=xuecheng-plus-project%40%40gateway&namespaceId=dev&port=63010&clusterName=DEFAULT&ip=192.168.215.32, body: {}
+2024-09-03 11:00:00,640 DEBUG [com.alibaba.nacos.naming.failover][FailoverReactor.java:147] - failover switch is not found, failover00-00---000-VIPSRV_FAILOVER_SWITCH-000---00-00
+2024-09-03 11:00:00,640 DEBUG [com.alibaba.nacos.naming.failover][FailoverReactor.java:147] - failover switch is not found, failover00-00---000-VIPSRV_FAILOVER_SWITCH-000---00-00
+2024-09-03 11:00:01,649 DEBUG [PollingServerListUpdater-0][HostReactor.java:306] - failover-mode: false
+2024-09-03 11:00:01,649 DEBUG [PollingServerListUpdater-0][HostReactor.java:306] - failover-mode: false
+2024-09-03 11:00:01,649 DEBUG [PollingServerListUpdater-0][DynamicServerListLoadBalancer.java:241] - List of Servers for checkcode obtained from Discovery client: [192.168.215.32:63075]
+2024-09-03 11:00:01,649 DEBUG [PollingServerListUpdater-0][DynamicServerListLoadBalancer.java:241] - List of Servers for checkcode obtained from Discovery client: [192.168.215.32:63075]
+2024-09-03 11:00:01,649 DEBUG [PollingServerListUpdater-0][DynamicServerListLoadBalancer.java:246] - Filtered List of Servers for checkcode obtained from Discovery client: [192.168.215.32:63075]
+2024-09-03 11:00:01,649 DEBUG [PollingServerListUpdater-0][DynamicServerListLoadBalancer.java:246] - Filtered List of Servers for checkcode obtained from Discovery client: [192.168.215.32:63075]
+2024-09-03 11:00:01,649 DEBUG [PollingServerListUpdater-0][BaseLoadBalancer.java:491] - LoadBalancer [checkcode]: clearing server list (SET op)
+2024-09-03 11:00:01,649 DEBUG [PollingServerListUpdater-0][BaseLoadBalancer.java:491] - LoadBalancer [checkcode]: clearing server list (SET op)
+2024-09-03 11:00:01,649 DEBUG [PollingServerListUpdater-0][BaseLoadBalancer.java:507] - LoadBalancer [checkcode]:  addServer [192.168.215.32:63075]
+2024-09-03 11:00:01,649 DEBUG [PollingServerListUpdater-0][BaseLoadBalancer.java:507] - LoadBalancer [checkcode]:  addServer [192.168.215.32:63075]
+2024-09-03 11:00:01,649 DEBUG [PollingServerListUpdater-0][DynamicServerListLoadBalancer.java:179] - Setting server list for zones: {unknown=[192.168.215.32:63075]}
+2024-09-03 11:00:01,649 DEBUG [PollingServerListUpdater-0][DynamicServerListLoadBalancer.java:179] - Setting server list for zones: {unknown=[192.168.215.32:63075]}
+2024-09-03 11:00:01,649 DEBUG [PollingServerListUpdater-0][BaseLoadBalancer.java:491] - LoadBalancer [checkcode_unknown]: clearing server list (SET op)
+2024-09-03 11:00:01,649 DEBUG [PollingServerListUpdater-0][BaseLoadBalancer.java:491] - LoadBalancer [checkcode_unknown]: clearing server list (SET op)
+2024-09-03 11:00:01,649 DEBUG [PollingServerListUpdater-0][BaseLoadBalancer.java:507] - LoadBalancer [checkcode_unknown]:  addServer [192.168.215.32:63075]
+2024-09-03 11:00:01,649 DEBUG [PollingServerListUpdater-0][BaseLoadBalancer.java:507] - LoadBalancer [checkcode_unknown]:  addServer [192.168.215.32:63075]
+2024-09-03 11:00:01,998 DEBUG [com.alibaba.nacos.client.naming.updater][NacosRestTemplate.java:476] - HTTP method: GET, url: http://localhost:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=dev&clientIP=192.168.136.1&serviceName=xuecheng-plus-project%40%40system-api&udpPort=51168&clusters=DEFAULT, body: {}
+2024-09-03 11:00:01,998 DEBUG [com.alibaba.nacos.client.naming.updater][NacosRestTemplate.java:476] - HTTP method: GET, url: http://localhost:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=dev&clientIP=192.168.136.1&serviceName=xuecheng-plus-project%40%40system-api&udpPort=51168&clusters=DEFAULT, body: {}
+2024-09-03 11:00:03,728 DEBUG [com.alibaba.nacos.client.naming.updater][NacosRestTemplate.java:476] - HTTP method: GET, url: http://localhost:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=dev&clientIP=192.168.136.1&serviceName=xuecheng-plus-project%40%40auth-service&udpPort=60138&clusters=, body: {}
+2024-09-03 11:00:03,728 DEBUG [com.alibaba.nacos.client.naming.updater][NacosRestTemplate.java:476] - HTTP method: GET, url: http://localhost:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=dev&clientIP=192.168.136.1&serviceName=xuecheng-plus-project%40%40auth-service&udpPort=60138&clusters=, body: {}
+2024-09-03 11:00:04,181 DEBUG [com.alibaba.nacos.client.naming.updater][NamingProxy.java:195] - server list provided by user: [localhost:8848]
+2024-09-03 11:00:04,181 DEBUG [com.alibaba.nacos.client.naming.updater][NamingProxy.java:195] - server list provided by user: [localhost:8848]
+2024-09-03 11:00:04,525 DEBUG [com.alibaba.nacos.naming.failover][FailoverReactor.java:147] - failover switch is not found, failover00-00---000-VIPSRV_FAILOVER_SWITCH-000---00-00
+2024-09-03 11:00:04,525 DEBUG [com.alibaba.nacos.naming.failover][FailoverReactor.java:147] - failover switch is not found, failover00-00---000-VIPSRV_FAILOVER_SWITCH-000---00-00
